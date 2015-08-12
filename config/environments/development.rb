@@ -40,6 +40,9 @@ Rails.application.configure do
   # config.action_view.raise_on_missing_translations = true
   
   # Needed for Devise
-  config.assets.initialize_on_precompile = false
+  config.action_mailer.default_url_options = { host: '$IP', port: $PORT }
+  
+  # Needed for ImageMagick
+  Paperclip.options[:command_path] = "/usr/local/bin/"
 end
 
