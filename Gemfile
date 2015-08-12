@@ -29,6 +29,7 @@ gem 'haml', '~> 4.0.5'
 
 gem 'bootstrap-sass', '~> 3.2.0.2'
 
+gem 'devise', '~> 3.5.1'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
